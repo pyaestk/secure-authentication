@@ -1,4 +1,4 @@
-<h1>Android School Project</h1>
+<h1>Cyber Security Project</h1>
 
 <h2>Setup Instructions</h2>
 
