@@ -1,0 +1,371 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".ui.view.HomeActivity">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:orientation="vertical"
+                app:layout_constraintTop_toBottomOf="@+id/textView3">
+
+                <LinearLayout
+                    android:id="@+id/btn_reset_pw"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="visible">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView16"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/pw_reset_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Reset password"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/grayText"
+                        app:srcCompat="@drawable/forward_ic_24" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/white_variant"
+                    android:visibility="visible" />
+
+                <LinearLayout
+                    android:id="@+id/btn_signout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="18dp"
+                    android:layout_marginEnd="20dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:id="@+id/imageView15"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            app:srcCompat="@drawable/baseline_logout_24" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="8dp"
+                            android:text="Sign out"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="wrap_content"
+                        android:tint="@color/grayText"
+                        app:srcCompat="@drawable/forward_ic_24" />
+
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginHorizontal="20dp"
+                    android:layout_marginTop="18dp"
+                    android:background="@color/white_variant" />
+
+            </LinearLayout>
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/cardView4"
+                style="@style/Widget.Material3.CardView.Elevated"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="32dp"
+                android:layout_marginEnd="16dp"
+                android:backgroundTint="@color/white"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="3dp"
+                app:cardUseCompatPadding="true"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/layout_cardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:visibility="visible">
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/iv_user_profile"
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:layout_marginTop="32dp"
+                        android:background="@color/white"
+                        android:elevation="3dp"
+                        android:padding="1dp"
+                        android:scaleType="centerCrop"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.5"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:shapeAppearance="@style/ShapeAppearance.Material3.Corner.Full"
+                        app:srcCompat="@drawable/user_profile_image"
+                        app:strokeColor="@color/grayText"
+                        app:strokeWidth="1dp" />
+
+                    <TextView
+                        android:id="@+id/tv_enduser_name"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/iv_user_profile"
+                        tools:text="Pyae Sone Thant Kyaw" />
+
+                    <TextView
+                        android:id="@+id/tv_enduser_email"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray_white"
+                        android:textSize="16sp"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_enduser_name"
+                        app:layout_constraintStart_toStartOf="@+id/tv_enduser_name"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_enduser_name"
+                        tools:text="pyaesonethantkyaw@gmail.com" />
+
+                    <TextView
+                        android:id="@+id/tv_phone_number"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:textAlignment="center"
+                        android:textColor="@color/gray_white"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="@+id/tv_enduser_name"
+                        app:layout_constraintStart_toStartOf="@+id/tv_enduser_name"
+                        app:layout_constraintTop_toBottomOf="@+id/tv_enduser_email"
+                        tools:text="34235235" />
+
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <!--            <androidx.constraintlayout.widget.ConstraintLayout-->
+            <!--                android:id="@+id/linearLayout"-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:paddingBottom="24dp"-->
+            <!--                android:textAlignment="center"-->
+            <!--                app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@+id/cardView4">-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_enduser_location"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="16dp"-->
+            <!--                    android:layout_marginEnd="32dp"-->
+            <!--                    android:textAlignment="viewEnd"-->
+            <!--                    android:textColor="@color/gray_white"-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="@+id/textView9"-->
+            <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+            <!--                    app:layout_constraintStart_toEndOf="@+id/textView9"-->
+            <!--                    app:layout_constraintTop_toTopOf="@+id/textView9"-->
+            <!--                    tools:text="Myanmar" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_enduser_phone"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="16dp"-->
+            <!--                    android:textAlignment="viewEnd"-->
+            <!--                    android:textColor="@color/gray_white"-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="@+id/textView11"-->
+            <!--                    app:layout_constraintEnd_toEndOf="@+id/tv_enduser_location"-->
+            <!--                    app:layout_constraintStart_toEndOf="@+id/textView11"-->
+            <!--                    app:layout_constraintTop_toTopOf="@+id/textView11"-->
+            <!--                    tools:text="09 773617428" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/tv_preferred_sports"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="16dp"-->
+            <!--                    android:layout_marginEnd="8dp"-->
+            <!--                    android:text="10"-->
+            <!--                    android:textAlignment="viewEnd"-->
+            <!--                    android:textColor="@color/gray_white"-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    app:layout_constraintBottom_toBottomOf="@+id/btn_see_all_sport"-->
+            <!--                    app:layout_constraintEnd_toStartOf="@+id/btn_see_all_sport"-->
+            <!--                    app:layout_constraintStart_toEndOf="@+id/textView10"-->
+            <!--                    app:layout_constraintTop_toTopOf="@+id/btn_see_all_sport" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView10"-->
+            <!--                    android:layout_width="0dp"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:drawablePadding="8dp"-->
+            <!--                    android:text="Preferred sports :"-->
+            <!--                    android:textAlignment="center"-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    app:layout_constraintStart_toStartOf="@+id/textView9"-->
+            <!--                    app:layout_constraintTop_toBottomOf="@+id/tv_enduser_phone" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView9"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginStart="32dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:drawablePadding="8dp"-->
+            <!--                    android:text="Location :"-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    app:layout_constraintStart_toStartOf="parent"-->
+            <!--                    app:layout_constraintTop_toTopOf="parent" />-->
+
+            <!--                <TextView-->
+            <!--                    android:id="@+id/textView11"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="wrap_content"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:drawablePadding="8dp"-->
+            <!--                    android:text="Contact number :"-->
+            <!--                    android:textColor="@color/black"-->
+            <!--                    android:textSize="16sp"-->
+            <!--                    app:layout_constraintStart_toStartOf="@+id/textView9"-->
+            <!--                    app:layout_constraintTop_toBottomOf="@+id/tv_enduser_location" />-->
+
+            <!--                <ImageView-->
+            <!--                    android:id="@+id/btn_see_all_sport"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="20dp"-->
+            <!--                    android:layout_marginTop="16dp"-->
+            <!--                    android:tint="@color/gray_white"-->
+            <!--                    app:layout_constraintEnd_toEndOf="@+id/tv_enduser_phone"-->
+            <!--                    app:layout_constraintTop_toBottomOf="@+id/tv_enduser_phone"-->
+            <!--                    app:srcCompat="@drawable/forward_ic" />-->
+
+            <!--            </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/oswald_variablefont_wght"
+                android:text="PROFILE DETAIL"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:elevation="10dp"
+                android:visibility="gone"
+                app:layout_constraintBottom_toBottomOf="@+id/cardView4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/cardView4" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="32dp"
+                android:fontFamily="@font/oswald_variablefont_wght"
+                android:text="SETTINGS"
+                android:textColor="@color/grayText"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@+id/cardView4"
+                app:layout_constraintTop_toBottomOf="@+id/cardView4" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

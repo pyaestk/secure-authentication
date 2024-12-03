@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">SecureAuthentication</string>
+
+    <string name="registration_successful">Registration Successful!</string>
+    <string name="the_passwords_doesn_t_match">The passwords doesn\'t match</string>
+    <string name="confirm_password_can_t_be_empty">Confirm Password can\'t be blank</string>
+    <string name="password_must_contain_at_least_1_letter">Password must contain at least 1 letter</string>
+    <string name="password_must_contain_at_least_1_special_character">Password must contain at least 1 special character</string>
+    <string name="password_must_contain_at_least_2_numbers">Password must contain at least 2 numbers</string>
+    <string name="nine_characters_minimum_and_remaining">Minimum 9 characters, including at least 1 uppercase letter, 1 lowercase letter, 2 digits, and 1 special character</string>
+    <string name="this_password_can_t_be_blank">This password can\'t be blank</string>
+    <string name="the_email_can_t_be_blank">The email can\'t be blank</string>
+    <string name="that_s_not_a_valid_email">Enter a valid email address</string>
+    <string name="password_must_contain_at_least_1_uppercase_letter">password must contain at least 1 uppercase letter</string>
+    <string name="password_must_contain_at_least_1_lowercase_letter">password must contain at least 1 lowercase letter</string>
+</resources>
