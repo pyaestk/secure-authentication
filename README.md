@@ -1,4 +1,45 @@
-<h1>Cyber Security Project</h1>
+# Security School Project
+
+This Android app was developed with a focus on modern cybersecurity principles and robust user authentication, implemented using **MVVM architecture**, **Kotlin**, **Firebase**, and **HCaptcha**. Below are the key security features included:
+
+### 🛡️ Password Management
+- **Strong Password Rules**: Enforces minimum 9 characters with uppercase, lowercase, 2 digits, and 1 special character.
+- **Password Strength Meter**: Dynamically evaluates strength (`Weak`, `Medium`, `Strong`, `Perfect`) as users type.
+- **Password Confirmation**: Ensures password re-entry during registration to avoid typos.
+- **Secure Reset Functionality**: Validates current password before allowing a reset.
+- **Encryption**: Uses Firebase Authentication with bcrypt hashing for secure password storage.
+
+### 🤖 CAPTCHA Integration (HCaptcha)
+- **Privacy-Focused CAPTCHA**: Integrated HCaptcha to protect against bots without tracking users.
+- **Challenge-Based Security**: Enforces CAPTCHA after multiple failed login attempts and during registration.
+- **Bot Resistance**: Advanced, image-based challenges that evolve in real-time to resist automation.
+
+### 📧 Additional Security Features
+- **Email Verification**: Confirms email ownership post-registration.
+- **Login Timeout**: Temporarily disables login and notifies users after repeated failures.
+- **OTP-Based Two Factor Authentication**: Sends one-time passwords via email to secure user sessions.
+
+These features collectively enhance the security posture of the app and offer protection against common threats such as brute-force attacks, automated bots, and fake account creation.
+
+## 📸 Screenshots
+
+<img src="https://github.com/user-attachments/assets/62305748-ed40-4788-b558-3242f1db4fd8" width="200" />
+<img src="https://github.com/user-attachments/assets/caa69f38-9901-4484-98f3-117781da2f64" width="200" />
+<img src="https://github.com/user-attachments/assets/ddeb0181-2378-4b2f-8bdb-23332d49daf6" width="200" />
+
+<img src="https://github.com/user-attachments/assets/5bdf6504-e1d4-4f18-9a86-c2b5b519f05e" width="200" />
+<img src="https://github.com/user-attachments/assets/03c04fec-ea5e-4df8-8084-4bc525af39a0" width="200" />
+<img src="https://github.com/user-attachments/assets/ddb45100-c96f-4d70-9c8c-060dfa97efd4" width="200" />
+<img src="https://github.com/user-attachments/assets/d6916db0-96e0-4615-ae25-e0ab0eb59281" width="200" />
+<img src="https://github.com/user-attachments/assets/c6cb0c8a-0fa4-4269-9e71-1a7a69121431" width="200" />
+
+<img src="https://github.com/user-attachments/assets/867159b1-21b5-4069-a25f-74470ce54e56" width="200" />
+
+<img src="https://github.com/user-attachments/assets/d2e05ced-70b0-4f6b-9455-fab3b86bf16e" width="200" />
+<img src="https://github.com/user-attachments/assets/f08ae9e2-6a3e-4243-b41c-111b8d1b8ebc" width="200" />
+<img src="https://github.com/user-attachments/assets/420ca687-dba1-4ddf-bd61-e7f2346af56a" width="200" />
+<img src="https://github.com/user-attachments/assets/daf97185-d40e-4975-98c1-aa1f30c7b50d" width="200" />
+
 
 <h2>Setup Instructions</h2>
 
